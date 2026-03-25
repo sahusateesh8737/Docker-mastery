@@ -52,7 +52,7 @@ This document highlights:
 
 ---
 
-# 🚀 Unit 2: Orchestration with Docker Compose
+#  Unit 2: Orchestration with Docker Compose
 
 ---
 
