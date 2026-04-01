@@ -52,7 +52,7 @@ This document highlights:
 
 ---
 
-#  Unit 2: Orchestration with Docker Compose
+# Unit 2: Orchestration with Docker Compose
 
 ---
 
@@ -130,6 +130,92 @@ Docker Compose acts as a bridge between:
 - Single-container execution → Distributed systems  
 - Manual setup → Declarative infrastructure  
 - Local development → Production-ready architecture  
+
+---
+
+# Unit 3: Build Systems with Maven
+
+---
+
+## Introduction
+
+After mastering containerization and orchestration, the next critical layer is build automation and dependency management.
+
+Apache Maven plays a key role in:
+
+- Structuring Java-based projects  
+- Managing dependencies efficiently  
+- Automating builds and packaging  
+- Integrating seamlessly with Docker-based workflows  
+
+This unit focuses on understanding Maven not just as a tool, but as a build lifecycle system.
+
+---
+
+# Repository Learning Modules (Unit 3)
+
+## Maven Fundamentals & Mastery
+
+### - 3.1 [Complete Maven Mastery](./Complete%20Maven%20Mastery.pdf)
+
+---
+
+# Core Technical Domains Covered (Maven)
+
+## Project Structure & Lifecycle
+- Standard directory layout  
+- Build lifecycle phases (validate → compile → test → package → install → deploy)  
+- Maven conventions over configuration  
+
+## Dependency Management
+- Transitive dependencies  
+- Dependency scopes (compile, provided, runtime, test)  
+- Conflict resolution (nearest definition strategy)  
+
+## Build & Packaging
+- JAR vs WAR packaging  
+- Plugins and goals  
+- Custom build configurations  
+
+## POM (Project Object Model)
+- XML structure and hierarchy  
+- GroupId, ArtifactId, Version  
+- Dependency declarations  
+- Plugin configuration  
+
+## Integration with Docker
+- Building artifacts for containerization  
+- WAR deployment into Tomcat containers  
+- Clean separation of build and runtime environments  
+
+---
+
+# Internal Understanding Developed
+
+- How Maven resolves dependencies from repositories  
+- How lifecycle phases map to actual build steps  
+- How plugins extend Maven functionality  
+- How builds become reproducible and consistent  
+- How Maven integrates into CI/CD pipelines  
+
+---
+
+# Practical Systems Built
+
+- Java Web Application (WAR packaging)  
+- Deployment on Tomcat using Docker  
+- Maven-based automated build pipeline  
+- Clean separation of source → artifact → container  
+
+---
+
+# Maven in the Bigger Picture
+
+Maven acts as a bridge between:
+
+- Source code → Deployable artifact  
+- Manual compilation → Automated builds  
+- Local development → CI/CD pipelines  
 
 ---
 
