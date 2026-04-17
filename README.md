@@ -39,9 +39,7 @@ Every topic is studied, executed, analyzed, and recorded with intent.
 
 **1.6** [Advanced Docker and Final Practice](./Advanced%20Docker%20and%20final%20practice.pdf)
 
-**1.7** [Docker Networking + Swarm Practicals](./Docker%20Networking%2BSwarm%20practicals.pdf)
-
-**1.8** [Mistakes Done and Learnings Made](./Mistakes%20done%20and%20learnings%20made.pdf)
+**1.7** [Mistakes Done and Learnings Made](./Mistakes%20done%20and%20learnings%20made.pdf)
 
 ---
 
@@ -104,7 +102,7 @@ Every topic is studied, executed, analyzed, and recorded with intent.
 
 ---
 
-## Unit 2: Orchestration with Docker Compose, Networking & Swarm
+## Unit 2: Orchestration with Docker Compose, Networking and Swarm
 
 ### Introduction
 
@@ -135,7 +133,7 @@ Together, these tools bridge the gap between single-container execution and prod
 - Container dependency management
 - Application-level structuring
 
-#### Networking (Compose & Swarm)
+#### Networking (Compose and Swarm)
 
 - Default Compose network
 - Embedded DNS-based service discovery
@@ -159,26 +157,30 @@ Together, these tools bridge the gap between single-container execution and prod
 
 #### Docker Swarm Orchestration
 
-- Swarm initialization and node registration
-- Manager vs Worker node roles
-- Service creation and replica management
-- Rolling updates and rollback
-- Drain and availability states for nodes
-- Stack deployment using Compose files in Swarm mode
-- Fault tolerance and automatic rescheduling
+- Swarm initialization on a single node (manager setup)  
+- Understanding service abstraction over containers  
+- Creation of services using `docker service create`  
+- Attaching services to overlay networks  
+- Inter-service communication using service names (DNS)  
+- Scaling services using replicas  
+- Verification of load balancing across replicas  
+- Understanding routing mesh through published ports  
 
 ---
 
 ### Internal Understanding Developed
 
-- How Compose translates YAML into container runtime instructions
-- How Docker automatically provisions networks for services
-- How DNS resolution replaces manual linking
-- How volumes decouple storage from containers
-- How multi-service systems behave during startup and shutdown
-- How Swarm distributes service replicas across nodes using the Raft consensus algorithm
-- How the ingress mesh routes external traffic to available replicas
-- How overlay networks enable encrypted cross-host container communication
+- How Docker Compose translates YAML into container runtime instructions  
+- How Docker automatically provisions networks for services  
+- How DNS resolution replaces manual linking  
+- How volumes decouple storage from containers  
+- How multi-service systems behave during startup and shutdown  
+
+- How Swarm uses service abstraction instead of direct container management  
+- How routing mesh forwards incoming requests to available replicas  
+- How load balancing distributes traffic across containers  
+- How overlay networks enable communication between services  
+- Difference between container-level and service-level networking  
 
 ---
 
