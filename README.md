@@ -6,7 +6,7 @@ A structured, hands-on journey into DevOps — focused on internal mechanics, op
 
 ## Introduction
 
-This repository documents a deep exploration of Docker — not just at the command level, but at the architectural level.
+This repository starts with documenting a deep exploration of Docker — not just at the command level, but at the architectural level.
 
 The goal is to understand:
 
